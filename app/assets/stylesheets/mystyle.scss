@@ -149,3 +149,32 @@ input {
   width: auto;
   margin-left: 0;
 }
+ /*home page css*/
+
+ .homepage .container{
+  padding-top: 30px;
+}
+.homepage .left{
+  text-align: center;
+
+}
+.homepage .left img{
+}
+.homepage .right{
+  border-left: 1px solid #000; 
+}
+.homepage .right .Learned img{
+  margin-right: 5px;
+}
+.homepage .button{
+  margin-left: 40px;
+}
+.homepage .button .btn{
+  width: 150px;
+  height: 40px;
+  margin-right: 40px;
+  vertical-align: middle;
+}
+.homepage .Activities{
+  margin: 25px 0 0 15px;
+}

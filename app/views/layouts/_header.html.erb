@@ -4,7 +4,7 @@
         <%= content_tag :a,"Elearning App", class: "navbar-brand", href: root_path -%>
       </div>
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+        <li class="active"><%= link_to "Home", root_path %></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
       <% if logged_in? %>
@@ -25,7 +25,7 @@
         <% else %>
           <li>
             <%= link_to(signup_path) do %>
-              <span class="glyphicon glyphicon-user"></span> <%= t("header.signUp") %>
+              <span class="glyphicon glyphicon-user"></span> <%= t("heardsignUp") %>
             <% end %>
           </li>
           <li>
