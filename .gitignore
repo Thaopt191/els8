@@ -18,3 +18,7 @@
 
 # Ignore database config file.
 /config/database.yml
+
+# Ignore database seed and schema
+/db/seeds.rb
+/db/schema.rb

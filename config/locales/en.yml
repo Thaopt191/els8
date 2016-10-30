@@ -28,3 +28,8 @@ en:
     wrongInput: "Invalid email/password combination"
   user:
     createSuccess: "Create successfully!"
+    successUpdate: "Profile updated"
+    deleted: "User deleted"
+    require:
+      login: "Please log in."
+
