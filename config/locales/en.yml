@@ -21,3 +21,10 @@
 
 en:
   hello: "Hello world"
+  header:
+    signUp: "Sign Up"
+    login: "Login"
+  login:
+    wrongInput: "Invalid email/password combination"
+  user:
+    createSuccess: "Create successfully!"

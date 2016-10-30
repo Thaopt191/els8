@@ -1,22 +1,39 @@
 <header class="navbar navbar-inverse">
-   <div class="container-fluid">
-    <div class="navbar-header">
-      <%= content_tag :a,"Elearning App", class: "navbar-brand", href: root_path -%>
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <%= content_tag :a,"Elearning App", class: "navbar-brand", href: root_path -%>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      <% if logged_in? %>
+          <li><%= link_to @current_user.name , current_user %></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              Account <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><%= link_to "Profile", current_user %></li>
+              <li><%= link_to "Settings", '#' %></li>
+              <li class="divider"></li>
+              <li>
+                <%= link_to "Log out", logout_path, method: "delete" %>
+              </li>
+            </ul>
+          </li>
+        <% else %>
+          <li>
+            <%= link_to(signup_path) do %>
+              <span class="glyphicon glyphicon-user"></span> <%= t("header.signUp") %>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to(login_path) do %>
+              <span class="glyphicon glyphicon-log-in"></span> <%= t("header.login") %>
+            <% end %>
+          </li>
+        <% end %>
+      </ul>
     </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-  		<li>
-        <%= link_to(signup_path) do %>
-          <span class="glyphicon glyphicon-user"></span> Sign Up
-        </a>
-      <%end%>
-      <li>
-        <a href="#">
-          <span class="glyphicon glyphicon-log-in"></span> Login
-        </a>
-      </li>
-  	</ul>
-  </div>
-</header>
+  </header>
