@@ -1,0 +1,21 @@
+<% provide(:title, t(:"title.category.index") ) %>
+<h1>All categories</h1>
+
+<%= will_paginate %>
+
+<ul class="categories">
+  <% @categories.each do |category| %>
+    <li>
+      <h2 style="text-align: left; color: black;"> <%= category.name%>
+       <% if current_user.isAdmin?  %>
+  			| <%= link_to "delete", category, method: :delete,
+	                         								data: { confirm: t(:"confirm") } %>
+      <% end %>
+      </h2>
+      <p><i>description: </i> <br> <%= category.description %> </p>
+      <%= link_to "Start lesson", category, class: "btn btn-warning btn-lg" %>
+    </li>
+  <% end %>
+</ul>
+
+<%= will_paginate %>

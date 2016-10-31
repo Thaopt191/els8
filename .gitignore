@@ -22,3 +22,5 @@
 # Ignore database seed and schema
 /db/seeds.rb
 /db/schema.rb
+
+terminal.glue

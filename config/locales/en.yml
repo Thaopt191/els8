@@ -21,6 +21,16 @@
 
 en:
   hello: "Hello world"
+  title:
+    user:
+      new: "Sign Up"
+      index: "All User"
+      edit: "Edit user"
+    session:
+    category:
+      name: "Category"
+      new: "New Category"
+      index: "All categories"
   header:
     signUp: "Sign Up"
     login: "Login"
@@ -32,4 +42,24 @@ en:
     deleted: "User deleted"
     require:
       login: "Please log in."
-
+  category:
+    create:
+      success: "Create new category successfully."
+      fail: "Fail to create new category."
+    deleted: "Category deleted!"
+  confirm: "You sure?"
+  word:
+    create:
+      success: "Create successfully"
+      fail: "Fail to create"
+  words:
+    alert_1: "Have no words"
+    alert_2: "Please select to filter words"
+    label_all: "All"
+    label_learn: "Learned"
+    label_notlearn: "Not learned"
+    radio_all: "all"
+    radio_learn: "learned"
+    radio_notlearn: "notlearned"
+    submit: "Filter"
+    submit_create: "Create"    
