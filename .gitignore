@@ -18,3 +18,9 @@
 
 # Ignore database config file.
 /config/database.yml
+
+terminal.glue
+
+/db/schema.rb
+
+Gemfile.lock
