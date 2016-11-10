@@ -21,3 +21,9 @@
 
 en:
   hello: "Hello world"
+  app_name: "E-Learning App"
+  home: "Home"
+  welcome: "Welcome to the Elearning app"
+  description: "This is the home page for the Elearning application"
+  login: "Login"
+  signup: "Sign up"
