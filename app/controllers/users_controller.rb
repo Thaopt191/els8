@@ -1,4 +1,13 @@
 class UsersController < ApplicationController
+  def show
+    @user = User.find_by id: params[:id]
+  end
+
+  def index
+    WillPaginate.per_page = Settings.per_page
+    @users = User.paginate(page: params[:page]).order("id DESC")
+  end
+  
   def new
     @user = User.new
   end

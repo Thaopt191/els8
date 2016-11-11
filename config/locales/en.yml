@@ -31,6 +31,7 @@ en:
   user: 
     bt_create: "Create my account"
     successCreate: "Create successfully!"
+    all: "All users"
   error_st1: "The form contains"
   error: "error"
 
