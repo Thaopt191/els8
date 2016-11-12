@@ -34,4 +34,5 @@ en:
     all: "All users"
   error_st1: "The form contains"
   error: "error"
-
+  signup_button: "Sign up now!"
+  new_user: "New user?"
