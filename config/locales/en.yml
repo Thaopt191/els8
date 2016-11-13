@@ -27,3 +27,10 @@ en:
   description: "This is the home page for the Elearning application"
   login: "Login"
   signup: "Sign up"
+  pw_confirm: "Confirmation"
+  user: 
+    bt_create: "Create my account"
+    successCreate: "Create successfully!"
+  error_st1: "The form contains"
+  error: "error"
+
