@@ -24,3 +24,11 @@ terminal.glue
 /db/schema.rb
 
 Gemfile.lock
+
+config/environments/*.local.yml
+config/settings/*
+
+
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml
