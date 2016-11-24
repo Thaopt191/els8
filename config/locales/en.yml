@@ -32,6 +32,7 @@ en:
     bt_create: "Create my account"
     successCreate: "Create successfully!"
     all: "All users"
+    remember: "Remember me on this computer"
   error_st1: "The form contains"
   error: "error"
   signup_button: "Sign up now!"
