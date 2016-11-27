@@ -2,6 +2,7 @@ class User < ApplicationRecord
   attr_accessor :remember_token
   has_many :activities
   has_many :results
+  enum isAdmin: [:admin, :member]
   validates :name, presence: true, length: {maximum: Settings.name_max_length}
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   
