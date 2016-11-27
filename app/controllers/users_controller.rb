@@ -30,8 +30,9 @@ class UsersController < ApplicationController
     @user = User.find_by(id: params[:id])
     if @user.update_attributes(user_params)
       flash[:success] = t("user.update_success")
-      redirect_to root_path
+      redirect_to @user
     else
+      flash[:warning] = t("user.update_fail")
       render "edit"
     end
   end
