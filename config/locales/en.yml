@@ -49,3 +49,5 @@ en:
   profile: "Profile"
   setting: "Settings"
   start: "Start learnning now!"
+  req_login: "Please log in!"
+  wrong_user: "Wrong user!"
