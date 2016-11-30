@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'relationships/creat'
+
+  get 'relationships/destroy'
+
   root "static_page#home"
   get "/signup", to: "users#new"
   post "/signup", to: "users#create"
