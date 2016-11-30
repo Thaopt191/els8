@@ -28,7 +28,7 @@ en:
   login: "Login"
   signup: "Sign up"
   pw_confirm: "Confirmation"
-  user: 
+  user:
     bt_create: "Create my account"
     edit: "Edit user"
     prof_update: "Update your profile"
@@ -56,3 +56,7 @@ en:
   req_login: "Please log in!"
   wrong_user: "Wrong user!"
   req_admin: "Access denied, please login with admin account!"
+  following: "following"
+  followers: "followers"
+  follow: "Follow"
+  unfollow: "Unfollow"

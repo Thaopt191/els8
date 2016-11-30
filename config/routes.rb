@@ -9,4 +9,11 @@ Rails.application.routes.draw do
   namespace "admin" do
     resources :users, only: [:index, :destroy]
   end
+
+  resources :users do
+    resources :followings, only: [:index]
+    resources :followers, only: [:index]
+  end
+
+  resources :relationships,  only: [:create, :destroy]
 end

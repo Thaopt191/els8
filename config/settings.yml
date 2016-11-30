@@ -1,4 +1,4 @@
-name_max_length: 6
+name_max_length: 50
 pw_min_length: 6
 email_max_length: 255
 gravatar_size: 50
