@@ -20,6 +20,8 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  delete: "delete"
+  edit: "edit"
   hello: "Hello world"
   app_name: "E-Learning App"
   home: "Home"
@@ -60,3 +62,18 @@ en:
   followers: "followers"
   follow: "Follow"
   unfollow: "Unfollow"
+  category:
+    name: "Category"
+    new: "New Category"
+    index: "All categories"
+    create:
+      success: "Create new category successfully."
+      fail: "Fail to create new category."
+    deleted: "Category deleted!"
+    description: "description:"
+    start: "Start lesson"
+    all: "All categories"
+    create_new: "Create New Category"
+    update-success: "Update successfully!"
+    update-fail: "Update fail!"
+    update: "Update category"

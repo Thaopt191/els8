@@ -1,0 +1,21 @@
+<% provide(:title, t(:"category.name") ) %>
+<h1><%= t("category.all") %></h1>
+
+<%= link_to t("category.new"), new_admin_category_url, class: "btn btn-primary" %>
+
+<%= will_paginate %>
+
+<ul class="categories">
+  <% @categories.each do |category| %>
+    <li>
+      <h2 class="category-index"> <%= category.name %>
+        | <%= link_to t("delete"), admin_category_path(category.id), method: :delete, data: { confirm: t("user.delete_cf") } %>
+        | <%= link_to t("edit"), edit_admin_category_path(category.id) %>
+      </h2>
+      <p><i><%= t "category.description" %> </i> <br> <%= category.description %> </p>
+      <%= link_to t("category.start"), category, class: "btn btn-warning btn-lg" %>
+    </li>
+  <% end %>
+</ul>
+
+<%= will_paginate %>

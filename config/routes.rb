@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   resources :users, only: [:index, :show, :edit, :update]
   namespace "admin" do
     resources :users, only: [:index, :destroy]
+    resources :categories, except: [:show]
   end
 
   resources :users do
@@ -16,4 +17,5 @@ Rails.application.routes.draw do
   end
 
   resources :relationships,  only: [:create, :destroy]
+  resources :categories, only: [:index, :show]
 end
