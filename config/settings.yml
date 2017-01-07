@@ -4,3 +4,5 @@ email_max_length: 255
 gravatar_size: 50
 gravatar_size2: 80
 per_page: 6
+category_name_min_length: 6
+category_des_min_length: 10

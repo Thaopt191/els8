@@ -35,7 +35,6 @@ h1 {
 h2 {
   font-size: 1.2em;
   letter-spacing: -1px;
-  margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
   color: #777;
@@ -136,5 +135,12 @@ input {
 }
 
 .follows {
-  border-left: 1px solid; 
+  border-left: 1px solid;
+}
+
+/* Category */
+
+.category-index {
+  text-align: left;
+  color: black;
 }
