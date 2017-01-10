@@ -17,7 +17,7 @@ class Admin::CategoriesController < ApplicationController
       flash[:success] = t "category.create.success"
       redirect_to admin_categories_url
     else
-      flash[:error] = t "category.create.fail"
+      flash[:danger] = t "category.create.fail"
       render "new"
     end
   end
@@ -32,7 +32,7 @@ class Admin::CategoriesController < ApplicationController
       flash[:success] = t("category.update-success")
       redirect_to admin_categories_url
     else
-      flash[:error] = t("user.update_fail")
+      flash[:danger] = t("user.update_fail")
       render "edit"
     end
   end
@@ -42,7 +42,7 @@ class Admin::CategoriesController < ApplicationController
     if @category.destroy
       flash[:success] = t "category.deleted"
     else
-      flash[:error] = t("user.delete_fail")
+      flash[:danger] = t("user.delete_fail")
     end
     redirect_to admin_categories_url
   end
