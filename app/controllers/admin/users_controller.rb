@@ -1,6 +1,6 @@
 class Admin::UsersController < ApplicationController
   before_action :admin_user, only: [:index, :destroy]
-  
+
   def index
     WillPaginate.per_page = Settings.per_page
     @users = User.paginate(page: params[:page]).order("id DESC")
